@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-blue-600 text-white">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-xl font-bold">My Website</h1>
+            <nav class="space-x-4">
+                <a href="#" class="hover:text-gray-300">Home</a>
+                <a href="#" class="hover:text-gray-300">About</a>
+                <a href="#" class="hover:text-gray-300">Services</a>
+                <a href="#" class="hover:text-gray-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-12 px-6">
+        <section class="text-center mb-12">
+            <h2 class="text-4xl font-bold mb-4">Welcome to My Website</h2>
+            <p class="text-lg text-gray-700">Discover amazing content and explore our services.</p>
+            <a href="#" class="mt-6 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-700">Get Started</a>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-2xl font-bold mb-2">តារាងគណនាតម្លៃទំនិញ</h3>
+                <table class="table-auto w-full bg-white shadow rounded-lg">
+                  <thead class="bg-gray-200">
+                      <tr>
+                          <th class="px-4 py-2 text-left">Price in 3rd Party App (RMB):</th>
+                          <th class="px-4 py-2 text-left">Price in Our App ($):</th>
+                          <th class="px-4 py-2 text-left">Rate</th>
+                          <th class="px-4 py-2 text-left">Price Converted (Dollar)</th>
+                          <th class="px-4 py-2 text-left">Price Change</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="border-t">
+                          <td class="px-4 py-2"><input type="number" id="price0" class="border rounded px-2 py-1 w-full"></td>
+                          <td class="px-4 py-2"><input type="number" id="price1" class="border rounded px-2 py-1 w-full"></td>
+                          <td class="px-4 py-2 text-center"><span id="rate">6.2</span></td>
+                          <td class="px-4 py-2 text-center"><span id="convertP"></span></td>
+                          <td class="px-4 py-2 text-center"><span id="changeP"></span></td>
+                      </tr>
+                      <tr>
+                          <td colspan="5" class="px-4 py-4 text-center">
+                              <button class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700">Calculate</button>
+                              <button class="bg-gray-600 text-white px-4 py-2 rounded shadow hover:bg-gray-700 ml-2">Copy</button>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-2xl font-bold mb-2">Feature 2</h3>
+                <p class="text-gray-700">Suspendisse potenti. Proin ut felis ut metus fermentum volutpat.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-2xl font-bold mb-2">Feature 3</h3>
+                <p class="text-gray-700">Curabitur ac velit vel est placerat suscipit vel in turpis.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto py-6 px-6 text-center">
+            <p class="text-sm">&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
